@@ -9,9 +9,6 @@ public:
     OBD();
     bool initialise();
     bool readTroubleCodes(String& dtcList);
-
-private:
-    bool sendPIDCommand(const char* pid, char* response, int bufsize);
 };
 
 extern OBD obd;
